@@ -42,7 +42,7 @@ class StreamController {
 	async del(req, res, next) {
 		try {
 			await Stream.findByIdAndDelete(req.params.id);
-			res.status(200).send({ message: 'Box deletado!' });
+			res.status(200).send({ message: 'Streamer deletado!' });
 
 			next();
 		} catch (err) {
